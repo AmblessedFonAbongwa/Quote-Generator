@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playfair Display", serif;
+}
+body{
+    background-color: #bbc6fa;
+}
+.container{
+    background-color: #fff;
+    width: 900px;
+    position: absolute;
+    font-family: "playfair Display";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+}
+
+.container h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.container h2::after{
+    content: "";
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(23,124,299);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+ span{
+ display: block;
+ float: right;
+ margin-top: 10px;
+ position: relative;
+}
+span::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: rgb(23,124,299);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+blockquote{
+    font-size: 20px;
+    min-width: 11px;
+}
+blockquote::before, blockquote::after{
+    content: '"';
+}
+
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container div button{
+    background-color: rgb(23,124,299);
+    color: #FFF;
+    border: 1px solid rgb(23,124,299);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.container div img{
+    margin-left: 2px;
+    width: 20px;
+    margin-right: 6px;
+}
+.container div button:nth-child(2){
+    background: transparent;
+    color: #222;
+}
